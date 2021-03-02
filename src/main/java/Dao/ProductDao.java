@@ -53,6 +53,8 @@ public class ProductDao {
         List<Product> list = query.list();
         session.close();
         return list;
+
+
     }
 
     /**
