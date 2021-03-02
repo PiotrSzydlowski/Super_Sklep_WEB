@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+<!--        <property name="connection.driver_class">oracle.jdbc.OracleDriver</property>-->
+        <property name="connection.url">jdbc:mysql://localhost:3306/shop</property>
+<!--            <property name="connection.url">jdbc:oracle:thin:@localhost:1521:XE</property>-->
+        <property name="connection.username">psz</property>
+<!--            <property name="connection.username">shop</property>-->
+        <property name="connection.password">psz</property>
+        <property name="connection.pool_size">100</property>
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+<!--            spring.jpa.database-platform=org.hibernate.dialect.Oracle10gDialect-->
+        <property name="current_session_context_class">thread</property>
+        <property name="hbm2ddl.auto">none</property>
+        <property name="show_sql">true</property>
+        <mapping class="entity.User"></mapping>
+        <mapping class="entity.Category"></mapping>
+        <mapping class="entity.Product"></mapping>
+        <mapping class="entity.Avability"></mapping>
+        <mapping class="entity.Order"></mapping>
+        <mapping class="entity.Sale"></mapping>
+    </session-factory>
+</hibernate-configuration>

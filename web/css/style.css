@@ -1,0 +1,263 @@
+.padding {
+    /*padding: 5rem !important;*/
+    margin-left: 300px
+}
+
+.card {
+    margin-bottom: 1.5rem
+}
+
+.col-md-4{
+    flex: 0 1 24.3333333%;
+}
+
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #c8ced3;
+    border-radius: .25rem
+}
+
+.card-header:first-child {
+    border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0
+}
+
+.card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: #f0f3f5;
+    border-bottom: 1px solid #c8ced3
+}
+
+/*.card-header-order {*/
+/*    padding: .75rem 1.25rem;*/
+/*    margin-bottom: 0;*/
+/*    background-color: gray;*/
+/*    border-bottom: 1px solid #c8ced3*/
+/*}*/
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem
+}
+
+
+
+.form-control:focus {
+    color: #5c6873;
+    background-color: #fff;
+    border-color: #c8ced3 !important;
+    outline: 0;
+    box-shadow: 0 0 0 #F44336
+}
+
+.custom-bg {
+    background: #54728e !important;
+    /*#c0c0c0*/
+}
+
+.discount-label {
+    font-size: 10px !important;
+    font-style: italic !important;
+    /*text-decoration: line-through!important;*/
+}
+
+.product-card:hover {
+    background: #e2e2e2;
+    cursor: pointer;
+}
+
+.container {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.admin .card {
+    border: 1px solid #673ab7;
+}
+
+.admin .card:hover {
+    background-color: #dedede;
+    cursor: pointer;
+}
+
+.list-group-item-active {
+    /*background: #c0c0c0;*/
+    background: #54728e;
+    border-color: #673ab7;
+}
+
+.table thead th {
+    background: #dedede;
+}
+
+/*.table-bordered td {*/
+/*    border: 1px solid black;*/
+/*}*/
+
+/*.table-bordered th {*/
+/*    border: 1px solid black;*/
+/*}*/
+
+/*.col-md-12 border{*/
+/*    border: 1px solid #7a7a7a;*/
+/*}*/
+
+.form-control {
+    background: transparent;
+    font-size: 16px;
+    /*background: #007bff;*/
+    border: solid 1px gray;
+    /*border-color: black;*/
+    box-shadow: none !important;
+}
+
+.form-control:focus {
+    border-color: #91d5a8;
+    /*background: #e9f5ee;*/
+    /*background: #007bff;*/
+}
+
+.form-control, .btn {
+    border-radius: 2px;
+}
+
+.login-form {
+    width: 380px;
+    margin: 0 auto;
+}
+
+.login-form h2 {
+    margin: 0;
+    padding: 30px 0;
+    font-size: 34px;
+}
+
+.login-form .avatar {
+    margin: 0 auto 30px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    z-index: 9;
+    /*background: #4aba70;*/
+    background: #dedede;
+    padding: 15px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.login-form .avatar img {
+    width: 100%;
+}
+
+.login-form form {
+    color: #7a7a7a;
+    /*color: #007bff;*/
+    border-radius: 4px;
+    margin-bottom: 20px;
+    /*background: #fff;*/
+    background: white;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+}
+
+.login-form .btn, .login-form .btn:active {
+    font-size: 16px;
+    line-height: 26px;
+    min-width: 120px;
+    font-weight: bold;
+    /*background: #4aba70 !important;*/
+    border: none;
+    background: #54728e;
+}
+
+.login-form .btn:hover, .login-form .btn:focus {
+    /*background: #40aa65 !important;*/
+    background: #54728e;
+}
+
+.form-check-label {
+    margin-top: 9px;
+}
+
+.form-check-label input {
+    margin-top: 3px;
+}
+
+.login-form a {
+    /*color: #4aba70;*/
+    color: darkgreen;
+}
+
+.login-form a:hover {
+    text-decoration: underline;
+}
+
+.hint-text {
+    /*color: #999;*/
+    color: #54728e;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.modal-header {
+    background: #673ab7;
+}
+
+#toast {
+    min-width: 300px;
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -120px;
+    background: #333;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    z-index: 1;
+    font-size: 18px;
+    visibility: hidden;
+    box-shadow: 0px 0px 100px #000;
+}
+
+#toast.display {
+    visibility: visible;
+    animation: fadeIn 0.5s, fadeOut0 .5s 2.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+
+
+
+
+
+

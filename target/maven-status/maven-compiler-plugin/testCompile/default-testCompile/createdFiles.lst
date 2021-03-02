@@ -1,0 +1,5 @@
+Dao\ProductDaoTest.class
+Dao\UserDaoTest.class
+servlets\RegisterServletTest.class
+Dao\AvabilityDaoTest.class
+Dao\CategoryDaoTest.class
